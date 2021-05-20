@@ -7,6 +7,10 @@ footer {
   justify-content: center;
 }
 
+body {
+  margin: 0;
+}
+
 /* Containers */
 
 .header-container {
@@ -22,6 +26,8 @@ footer {
 
 .main-container {
   background-color: #f9f8f8;
+  border-radius: 0.625rem;
+  box-shadow: 0.125rem 0.125rem 0.313rem #e0e0e0;
 
   margin-top: 3.75rem;
   width: 69.938rem;
@@ -36,6 +42,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+/* Texts */
+
+.header-link-text {
+  color: #000000;
+  font-size: 35px;
+  text-decoration: none;
 }
 
 .title-text {
@@ -54,31 +68,59 @@ footer {
   text-align: center;
 }
 
-.input-conversor-root {
-  width: 15px;
-  font-size: 1rem;
-}
-
-.input-element-converter {
-  width: 368px;
-  height: 52px;
-  border: 1px solid #cdcdcd;
+.builder {
+  font-size: 20px;
   text-align: center;
-  font-size: 30px;
-}
-
-.copy-button {
-  width: 56px;
-  height: 56px;
-  margin: auto 9px;
-  border: 1px solid #cdcdcd;
-  cursor: pointer;
 }
 
 .bold-text {
   font-weight: 700;
 }
 
-.builder {
+/* Inputs */
+
+.input-element-converter {
+  width: 368px;
+  height: 52px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
   text-align: center;
+  font-size: 30px;
+}
+
+.input-conversor-root {
+  width: 20px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+
+.copy-button {
+  width: 56px;
+  height: 56px;
+  margin: auto 9px;
+
+  border: 1px solid #cdcdcd;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Images */
+
+.icon-image-link {
+  width: 30px;
+  margin: auto 20px;
+}
+
+.swap-image-container {
+  position: relative;
+  left: 130px;
+  top: 30px;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
 }
