@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Conversor PX to REM</title>
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-container">
         <img src="icons/swap.svg" alt="swap-logo" width="100px">
         <h1>PEM</h1>
         <nav>
@@ -24,29 +25,32 @@
         </nav>
     </header>
 
-<div class="main-container">
-    <section>
-        <img src="icons/swap.svg" alt="swap-logo" width="50px">
-        <p><span class="bold-text">PIXEL</span> TO <span class="bold-text">REM</span> CONVERSOR</p>
-        <div>
-            <p>PX</p>
-            <input type="number">
-            <button></button>
+    <div class="flex-container">
+        <div class="main-container">
+            <section class="section-container">
+                <img class="swap-image-container" src="icons/swap.svg" alt="swap-logo" width="50px">
+                <p class="title-text"><strong>PIXEL</strong> TO<strong> REM</strong> CONVERSOR</p>
+                <div class="input-container">
+                    <p class="input-text-description">PX</p>
+                    <input class="input-element-converter" type="text">
+                    <button class="copy-button"><img src="icons/copy.svg" alt="copy-image" class="image-copy"></button>
+                </div>
+                <div class="input-container">
+                    <p class="input-text-description">REM</p>
+                    <input class="input-element-converter" type="text">
+                    <button class="copy-button"><img src="icons/copy.svg" alt="copy-image" class="image-copy"></button>
+                </div>
+                <p class="input-conversor-text">root size: <input type="text" class="input-conversor-root"></input> pixel</p>
+                <footer>
+                    <img src="icons/github.svg" class="icon-image-link" alt="github" width="20px">
+                    <img src="icons/linkedin-logo.svg" class="icon-image-link" alt="linkedin" width="20px">
+                    <img src="icons/message.svg" class="icon-image-link" alt="e-mail" width="20px">
+                </footer>
+            </section>
         </div>
-        <div>
-            <p>REM</p>
-            <input type="number">
-            <button></button>
-        </div>
-        <p>root size: <input type="number"></input>pixel</p>
-        <footer>
-            <img src="/icons/github.svg" alt="github" width="20px">
-            <img src="/icons/linkedin-logo.svg" alt="linkedin" width="20px">
-            <img src="/icons/message.svg" alt="e-mail" width="20px">
-        </footer>
-    </section>
-</div>
-<p>© build with <span class="bold-text">dedication</span>. By JLazaro.</p>
-    
+    </div>
+    <p class="builder">© build with <span class="bold-text">dedication</span>. By JLazaro.</p>
+
 </body>
+
 </html>
