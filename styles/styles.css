@@ -64,10 +64,27 @@ h1{
 
 .header-link-text {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   text-decoration: none;
 }
 
+.contact-button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  font-size: 30px;
+  width: 170px;
+  cursor: pointer;
+
+  color: white;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+}
+
+.contact-button:hover {
+  transition: all 0.3s ease 0s;
+  background-color: rgba(0,136,169,0.8);
+}
 
 /* Container flex*/
 
@@ -114,6 +131,7 @@ h1{
   justify-content: flex-end;
 }
 
+
 .input-text-description {
   color: #24252a;
   font-size: 2.5rem;
@@ -131,12 +149,13 @@ h1{
   font-size: 30px;
 }
 
-.input-element-converter:focus{
+.input-element-converter:focus {
   outline: none !important;
   transition: all 0.3s ease 0s;
   border: 1px solid #0088a9;
-
+  color: #0088a9;
 }
+
 
 
 .input-conversor-text {
@@ -148,6 +167,7 @@ h1{
 .copy-button {
   width: 56px;
   height: 56px;
+  padding: 8px;
   margin: auto 9px;
 
   border: 1px solid #cdcdcd;
@@ -156,15 +176,28 @@ h1{
   cursor: pointer;
 }
 
-.copy-button:hover{
-  transition: all 0.3s ease 0s;
-  border: 1px solid #0088a9;
+.image-copy{
+  fill: #cdcdcd;
+  width: 40px;
+  height: 40px;
+  
 }
 
+
 .input-conversor-root {
+  border: 1px solid #cdcdcd;
   width: 20px;
   font-size: 1rem;
 }
+
+.input-conversor-root:focus {
+  outline: none !important;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #0088a9;
+  color: #0088a9;
+
+}
+
 
 .container-image-link{
 margin: 0px 25px;
@@ -173,8 +206,7 @@ margin: 0px 25px;
 
 .icon-image-link {
   width: 30px;
-  fill: #A5A5A5;
-  
+  fill: #cdcdcd;
 
 }
 
