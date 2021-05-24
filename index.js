@@ -5,24 +5,36 @@ var pixel = 0;
 var rem = 0;
 
 
-// Return values //
+// ========== CHANGING THE ROOT ========== //
 
-var valuepixel = $("#input-px").val()
-
-
-$("#button-copy-1").click(function() {
-    console.log(valuepixel)
+$("#input-root").keyup(function(){
+    root = Number($(this).val());
 })
 
-// Calculate //
+
+
+// ========== CHANGING INPUT REM ========== //
+
+$("#input-px").keyup(function(){
+    var valuepixel = Number($(this).val());
+    $("#input-rem").val(valuepixel / root);
+
+    
+})
+
+// ========== CHANGING INPUT PX ========== //
+
+$("#input-rem").keyup(function(){
+    var valueRem = Number($(this).val());
+    $("#input-px").val(root / valueRem);
+})
+
+
+
 
 var rem_calculate = (pixel / root);
 var pixel_calculate = (root / rem);
 
 
-// Adding changes //
 
-$("#input-px").on('input', function(){
-    $("#input-rem").val("25")
-})
 
