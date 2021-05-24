@@ -1,5 +1,6 @@
 * {
   font-family: "Nunito", sans-serif;
+
 }
 
 footer {
@@ -147,7 +148,22 @@ h1{
 
   text-align: center;
   font-size: 30px;
+
 }
+
+
+.input-element-converter[type=number]::-webkit-inner-spin-button, 
+.input-element-converter[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.input-conversor-root[type=number]::-webkit-inner-spin-button, 
+.input-conversor-root[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 
 .input-element-converter:focus {
   outline: none !important;
