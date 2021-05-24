@@ -9,6 +9,9 @@ var rem = 0;
 
 $("#input-root").keyup(function(){
     root = Number($(this).val());
+
+    var valueRem = Number($("#input-rem").val());
+    $("#input-px").val(root * valueRem);
 })
 
 
@@ -19,6 +22,10 @@ $("#input-px").keyup(function(){
     var valuepixel = Number($(this).val());
     $("#input-rem").val(valuepixel / root);
 
+    if (!$(this).val()){
+        $("#input-rem").val("")
+    }
+
     
 })
 
@@ -27,6 +34,11 @@ $("#input-px").keyup(function(){
 $("#input-rem").keyup(function(){
     var valueRem = Number($(this).val());
     $("#input-px").val(root / valueRem);
+
+    if (!$(this).val()){
+        $("#input-px").val("")
+    }
+
 })
 
 
