@@ -1,7 +1,7 @@
 
-/* Math Mathodes
+/* Math methodes
 var rem_calculate = (pixel / root);
-var pixel_calculate = (root / rem);
+var pixel_calculate = (root * rem);
 */
 
 // Variables //
@@ -15,8 +15,11 @@ var rem = 0;
 // ========== CHANGING INPUT REM ========== //
 
 $("#input-px").keyup(function(){
-    var valuepixel = Number($(this).val());
-    $("#input-rem").val((valuepixel / root).toFixed(3));
+    var valuePixel = Number($(this).val());
+    var finalNumber = (valuePixel / root).toFixed(3);
+    finalNumber = checkDecimal(finalNumber)
+
+    $("#input-rem").val(finalNumber);
 
     if (!$(this).val()){
         $("#input-rem").val("");
@@ -28,15 +31,21 @@ $("#input-px").keyup(function(){
 // ========== CHANGING INPUT PX ========== //
 
 $("#input-rem").keyup(function(){
-    var valueRem = Number($(this).val());
-    $("#input-px").val((root / valueRem).toFixed(2));
+    root = $("#input-root").val();
+
+    var valueRem = $(this).val();
+    var finalNumber = (root * valueRem).toFixed(2);
+
+    finalNumber = checkDecimal(finalNumber);
+    
+    $("#input-px").val(finalNumber);
 
     if (!$(this).val()){
         $("#input-px").val("");
     }
 
-    var valueRem = Number($("#input-rem").val());
-    $("#input-px").val((root * valueRem).toFixed(2));
+    var valueRem = $("#input-rem").val();
+    $("#input-px").val(finalNumber);
 
     if(!valueRem){
         $("#input-px").val("");
@@ -47,11 +56,16 @@ $("#input-rem").keyup(function(){
 // ========== CHANGING THE ROOT ========== //
 
 $("#input-root").keyup(function(){
-        root = Number($(this).val());
-        var valueRem = Number($("#input-rem").val());
-        $("#input-px").val((root * valueRem).toFixed(2));
+        root = $(this).val();
 
-        if(!root){
+        var valueRem = $("#input-rem").val();
+        var finalNumber = (root * valueRem).toFixed(2);
+
+        finalNumber = checkDecimal(finalNumber);
+
+        $("#input-px").val(finalNumber);
+
+        if(!root || !$("#input-rem").val()){
             $("#input-px").val("");
         };
 
@@ -69,7 +83,16 @@ $("#button-copy-2").click(function(){
     document.execCommand('copy');
 })
 
+ 
+function checkDecimal(num){
+    var numPart = num.split(".")
 
+    if (numPart[1] == "00" || numPart[1] == "000"){
+        return numPart[0]
+    } else {
+        return num
+    }
+}
 
 
 
