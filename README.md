@@ -11,13 +11,17 @@ For this and another projects, see my [Github.](https://github.com/lazaro-contat
 
 ## 	📁 Clone the project
 
-If you want to view the files for this project, you can make a clone through the link below:
+If you want to view the files for this project, you can make a clone:
 
 ```sh
 git clone https://github.com/lazaro-contato/pixeltorem.git
 ```
 
-## 💻 Exemple of uses
+## 💻 Example of uses
+
+
+The Pixel to REM converter can be used for quick conversions of the two units of measurement. <br>
+The conversion methodology is based on a standard size of 16 pixels, which can be changed if necessary.<br>
 
 ## 📃 Portifolio
 
