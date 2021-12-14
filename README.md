@@ -38,6 +38,8 @@ https://www.figma.com/file/TQNLhLn54FVEIiESbRIhfh/Pixel-To-Rem?node-id=0%3A1
 
 * [ **TMB Calculator**](https://calories-react.netlify.app/).<br>
 *[Repository](https://github.com/lazaro-contato/calories)*
+* [ **Rest countries consumer**](https://rest-countries-consumer.netlify.app/).<br>
+*[Repository](https://github.com/lazaro-contato/restcountriesapi)*
 
 
 ## 📃 Portifolio
