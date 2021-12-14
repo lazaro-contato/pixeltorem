@@ -36,9 +36,8 @@ https://www.figma.com/file/TQNLhLn54FVEIiESbRIhfh/Pixel-To-Rem?node-id=0%3A1
 
 ## ➕ Another projects
 
-Simon Game - [https://github.com/lazaro-contato/simongame.git](https://github.com/lazaro-contato/simongame.git)<br>
-Dice Challenge - [https://github.com/lazaro-contato/dicechallenge](https://github.com/lazaro-contato/dicechallenge)<br>
-Kit Drum - [https://github.com/lazaro-contato/kitdrum](https://github.com/lazaro-contato/kitdrum)<br>
+* [ **TMB Calculator**](https://calories-react.netlify.app/).<br>
+*[Repository](https://github.com/lazaro-contato/calories)*
 
 
 ## 📃 Portifolio
